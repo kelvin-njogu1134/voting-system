@@ -1,0 +1,429 @@
+/* style.css - Kenyan Flag Theme: Black, Red, Green, White */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #000000 0%, #8B0000 50%, #006400 100%);
+    min-height: 100vh;
+    color: white;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #8B0000;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px #8B0000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.navbar ul li a:hover {
+    background-color: #8B0000;
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.landing {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+    text-shadow: 3px 3px 6px #000000;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+    border-bottom: 3px solid #006400;
+    padding-bottom: 0.5rem;
+}
+
+.developed-by {
+    font-size: 1.2rem;
+    color: #FFD700;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #006400;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s, background-color 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+    background-color: #8B0000;
+    transform: translateY(-2px);
+}
+
+.btn:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: white;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #8B0000;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #006400;
+    box-shadow: 0 0 0 3px rgba(0, 100, 0, 0.3);
+}
+
+.switch-page {
+    margin-top: 1.5rem;
+    text-align: center;
+    color: white;
+}
+
+.switch-page a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.switch-page a:hover {
+    text-decoration: underline;
+}
+
+/* Dashboard specific */
+#locationForm {
+    margin-top: 1rem;
+}
+
+/* Vote page */
+fieldset {
+    border: 2px solid #8B0000;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FFD700;
+    padding: 0 0.5rem;
+}
+
+.candidate-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+.candidate-option input[type="radio"] {
+    margin-right: 1rem;
+    width: auto;
+}
+
+.candidate-option label {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    flex: 1;
+}
+
+.candidate-thumb {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #000, #8B0000, #006400);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+}
+
+.candidate-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.candidate-name {
+    font-weight: bold;
+    color: white;
+}
+
+.candidate-party {
+    font-size: 0.9rem;
+    color: #FFD700;
+}
+
+#voteMessage {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+/* Results page */
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    border: 1px solid #8B0000;
+}
+
+.stat-card span {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+.chart-container {
+    position: relative;
+    height: 300px;
+    margin-bottom: 2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.progress-bars {
+    margin-top: 2rem;
+}
+
+.progress-item {
+    margin-bottom: 1rem;
+}
+
+.progress-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.3rem;
+}
+
+.progress-bar-bg {
+    background-color: #333;
+    height: 25px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #006400, #8B0000);
+    color: white;
+    line-height: 25px;
+    padding-left: 10px;
+    transition: width 0.5s ease-in-out;
+}
+
+.position-progress {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+.position-progress h3 {
+    color: #FFD700;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #8B0000;
+    padding-bottom: 0.5rem;
+}
+
+/* Admin panel */
+.admin-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.admin-position {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+.admin-position h4 {
+    color: #FFD700;
+    margin-bottom: 0.5rem;
+}
+
+.admin-position ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.admin-position li {
+    padding: 0.3rem 0;
+    border-bottom: 1px solid #8B0000;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
+/* Styled radio boxes for vote page */
+.candidate-option {
+    position: relative;
+    cursor: pointer;
+}
+
+.candidate-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+}
+
+.candidate-option label {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    border: 2px solid transparent;
+    transition: all 0.2s;
+    cursor: pointer;
+    position: relative;
+    padding-right: 40px; /* space for custom radio */
+}
+
+.candidate-option input[type="radio"]:checked + label {
+    border-color: #006400;
+    background-color: rgba(0, 100, 0, 0.2);
+}
+
+.radio-custom {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border: 2px solid #8B0000;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.candidate-option input[type="radio"]:checked + label .radio-custom {
+    background-color: #006400;
+    border-color: #006400;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z'/%3E%3C/svg%3E");
+    background-size: contain;
+}
+
+/* Disabled state */
+.candidate-option input[type="radio"]:disabled + label {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.candidate-option input[type="radio"]:disabled + label .radio-custom {
+    opacity: 0.5;
+}

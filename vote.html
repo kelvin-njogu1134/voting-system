@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartVote Kenya - Cast Your Vote</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">SmartVote Kenya</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="#" id="logout">Logout</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h2>Cast Your Ballot</h2>
+        <form id="ballotForm">
+            <!-- Positions will be injected by JavaScript -->
+            <div id="positionsContainer"></div>
+            <button type="submit" class="btn" id="submitVote">Submit Vote</button>
+        </form>
+        <div id="voteMessage"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
